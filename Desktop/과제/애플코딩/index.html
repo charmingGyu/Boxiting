@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- <h2 id="hello">안녕하세요</h2>
+    <h2 id="hi">올때메로나</h2> -->
+    <div class="alert-box" id="alert">
+      <p id="title">Alert 박스</p>
+      <button onclick="알림창열기('none')">닫기</button>
+    </div>
+    <button onclick="알림창1열기('아이디입력'); ">버튼1</button>
+    <button onclick="알림창1열기('비번입력'); ">버튼2</button>
+    <button onclick="알림창1열기('Alert 박스'); ">버튼3</button>
+    <script>
+      function 알림창1열기(구멍) {
+        document.getElementById("title").innerHTML = 구멍;
+        document.getElementById("alert").style.display = "block";
+      }
+
+      function 알림창열기(구멍) {
+        document.getElementById("alert").style.display = 구멍;
+      }
+    </script>
+  </body>
+</html>
